@@ -5,7 +5,7 @@ The enclosed package contains scripts and subroutines for surveying location of 
 ## Author Information
 Author: Will Harris \
 Email: harriswr@mit.edu \
-Date: 10/16/24 \
+Date: 10/16/24
 
 ## Brief Overview 
 The files here can be used to automate the localization and drift calculation for PIES recoveries. 
