@@ -68,6 +68,11 @@ File Included with this package:
 │   │   ├── C3_localization.fig: Localization output for C3\
 │   │   ├── C3_manual.fig: Piecewise approximation of UHDAS for C3\
 │   │   └── C4_localization.fig: Localization output for C4\
+│   ├── figure_pngs: PNG files so that can check code running correctly on new machines\
+│   │   ├── C3_adcp.png: UHDAS output for C3\
+│   │   ├── C3_localization.png: Localization output for C3\
+│   │   ├── C3_manual.png: Piecewise approximation of UHDAS for C3\
+│   │   └── C4_localization.png: Localization output for C4\
 │   ├── pies.mat: PIES struct for RR2412 including lat, lon, and depth\
 │   ├── rr2412_init.m: Code used to build the pies.mat file\
 │   └── template_calculate_drift.m: template for calculating the drift (used to make C3_calculate_drift.m)\
