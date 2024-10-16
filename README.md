@@ -26,8 +26,8 @@ Files with the subscript "template" will create copies when run based on the pie
 The envisioned workflow for using this project is as follows:
 
 1. Fill out station names, lat-lon coordinates, and depths in init.m 
-	-This will create a "pies" object referenced and edited by all other codes. 
-	-After running this once at the start of the cruise, you should not need to change it. Rerunning this file will erase all localization and drift data from the structure and will require you to rerun the relevant scripts.
+    - This will create a "pies" object referenced and edited by all other codes. 
+	- After running this once at the start of the cruise, you should not need to change it. Rerunning this file will erase all localization and drift data from the structure and will require you to rerun the relevant scripts.
 2. When at a station and performing localization, use template_survey_position and follow instructions in comments.
 	- Changes piesID to the name specified in the init file, as this will inform which sub-struct to edit.
 	- This file will draw the circles used for triangulating the deployment position of the instrument
