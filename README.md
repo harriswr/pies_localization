@@ -3,9 +3,9 @@
 The enclosed package contains scripts and subroutines for surveying location of deployed PIES and estimating drift during recovery operations.
 
 ## Author Information
-Author: Will Harris
-Email: harriswr@mit.edu
-Date: 10/16/24
+Author: Will Harris \
+Email: harriswr@mit.edu \
+Date: 10/16/24 \
 
 ## Brief Overview 
 The files here can be used to automate the localization and drift calculation for PIES recoveries. 
@@ -53,32 +53,32 @@ The envisioned workflow for using this project is as follows:
 ## Explanation of files
 File Included with this package:
 
-├── README.txt: this file
-├── calculate_drift_override.m: Use this if you want to estimate the surfaced position manually (takes in a heading and distance)
-├── figures: .fig files when codes are run
-├── init.m: Builds PIES struct
-├── rr2412_examples
-│   ├── C3_calculate_drift.m: Sample for C3 site on RR2412 showing output of drift calculations.
-│   ├── C3_survey_position.m: Sample for C3 site on RR2412 showing output of surveying calculations.
-│   ├── C4_survey_position.m: Sample for C4 site on RR2412 showing output of surveying calculations.
-│   ├── adcp.mat: UHDAS output from RR2412 so that the sample scripts can be run
-│   ├── calculate_drift_override.m: Sample for running a manual drift estimation (for telling ship where to be)
-│   ├── figures
-│   │   ├── C3_adcp.fig: UHDAS output for C3
-│   │   ├── C3_localization.fig: Localization output for C3
-│   │   ├── C3_manual.fig: Piecewise approximation of UHDAS for C3
-│   │   └── C4_localization.fig: Localization output for C4
-│   ├── pies.mat: PIES struct for RR2412 including lat, lon, and depth
-│   ├── rr2412_init.m: Code used to build the pies.mat file
-│   └── template_calculate_drift.m: template for calculating the drift (used to make C3_calculate_drift.m)
-├── subroutines
-│   ├── sub_calculate_pies_drift_manual.m: subroutine for calculating drift from manual speed inputs
-│   ├── sub_calculate_pies_drift_uhdas.m: subroutine for calculating drift from UHDAS inputs
-│   ├── sub_circle.m: subroutine for flat-earth ranging circles
-│   ├── sub_localize_pies.m: subroutine for drawing ranging circles and performing least-squares estimate of position
-│   ├── sub_make_pies_struct.m: subroutine to make pies structure
-│   ├── sub_read_uhdas.m: subroutine to read UHDAS files into one adcp struct
-│   ├── sub_transfer_LL_to_XY.m: subroutine to transfer lat-lon coordinates into x-y coordinates relative to a reference lat-lon
-│   └── sub_transfer_XY_to_LL.m: subroutine to transfer x-y coordinates into lat-lon coordinates relative to a reference lat-lon
-├── template_calculate_drift.m: blank copy to be edited in calculating drift for new cruises
-└── template_survey_position.m: blank copy to be edited in localizing PIES for new cruises
+├── README.txt: this file\
+├── calculate_drift_override.m: Use this if you want to estimate the surfaced position manually (takes in a heading and distance)\
+├── figures: .fig files when codes are run\
+├── init.m: Builds PIES struct\
+├── rr2412_examples\
+│   ├── C3_calculate_drift.m: Sample for C3 site on RR2412 showing output of drift calculations.\
+│   ├── C3_survey_position.m: Sample for C3 site on RR2412 showing output of surveying calculations.\
+│   ├── C4_survey_position.m: Sample for C4 site on RR2412 showing output of surveying calculations.\
+│   ├── adcp.mat: UHDAS output from RR2412 so that the sample scripts can be run\
+│   ├── calculate_drift_override.m: Sample for running a manual drift estimation (for telling ship where to be)\
+│   ├── figures\
+│   │   ├── C3_adcp.fig: UHDAS output for C3\
+│   │   ├── C3_localization.fig: Localization output for C3\
+│   │   ├── C3_manual.fig: Piecewise approximation of UHDAS for C3\
+│   │   └── C4_localization.fig: Localization output for C4\
+│   ├── pies.mat: PIES struct for RR2412 including lat, lon, and depth\
+│   ├── rr2412_init.m: Code used to build the pies.mat file\
+│   └── template_calculate_drift.m: template for calculating the drift (used to make C3_calculate_drift.m)\
+├── subroutines\
+│   ├── sub_calculate_pies_drift_manual.m: subroutine for calculating drift from manual speed inputs\
+│   ├── sub_calculate_pies_drift_uhdas.m: subroutine for calculating drift from UHDAS inputs\
+│   ├── sub_circle.m: subroutine for flat-earth ranging circles\
+│   ├── sub_localize_pies.m: subroutine for drawing ranging circles and performing least-squares estimate of position\
+│   ├── sub_make_pies_struct.m: subroutine to make pies structure\
+│   ├── sub_read_uhdas.m: subroutine to read UHDAS files into one adcp struct\
+│   ├── sub_transfer_LL_to_XY.m: subroutine to transfer lat-lon coordinates into x-y coordinates relative to a reference lat-lon\
+│   └── sub_transfer_XY_to_LL.m: subroutine to transfer x-y coordinates into lat-lon coordinates relative to a reference lat-lon\
+├── template_calculate_drift.m: blank copy to be edited in calculating drift for new cruises\
+└── template_survey_position.m: blank copy to be edited in localizing PIES for new cruises\
